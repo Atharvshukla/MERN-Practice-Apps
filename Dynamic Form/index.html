@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Form Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Dynamic Form Builder</h1>
+    
+    <!-- Form Builder -->
+    <div class="form-builder">
+      <label for="field-type">Field Type:</label>
+      <select id="field-type">
+        <option value="text">Text</option>
+        <option value="dropdown">Dropdown</option>
+        <option value="checkbox">Checkbox</option>
+      </select>
+      <input type="text" id="field-label" placeholder="Field Label" />
+      <button id="add-field">Add Field</button>
+    </div>
+    
+    <!-- Form Preview -->
+    <div class="form-preview">
+      <h2>Form Preview</h2>
+      <form id="dynamic-form"></form>
+      <button id="submit-form">Submit</button>
+    </div>
+
+    <!-- JSON Preview -->
+    <div class="json-preview">
+      <h2>Form Structure (JSON)</h2>
+      <pre id="json-output"></pre>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time Chat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="join-container">
+      <h1>Join Chat Room</h1>
+      <input type="text" id="username" placeholder="Enter your username" />
+      <input type="text" id="room" placeholder="Enter room name" />
+      <button id="join-btn">Join</button>
+    </div>
+
+    <div class="chat-room hidden">
+      <div class="chat-info">
+        <p>💡 Type <code>@bot</code> followed by your message to chat with the AI assistant</p>
+      </div>
+      <div class="messages" id="messages"></div>
+      <div class="typing" id="typing"></div>
+      <input type="text" id="message" placeholder="Type @bot to chat with AI..." />
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+
+  <!-- AI Chat Button -->
+  <button id="ai-chat-btn" class="ai-chat-button">Chat with AI</button>
+
+  <!-- AI Chat Container -->
+  <div class="ai-chat-container hidden">
+    <div class="ai-chat-header">
+      <h3>AI Chat</h3>
+      <button id="close-chat-btn">&times;</button>
+    </div>
+    <div id="ai-messages" class="ai-messages"></div>
+    <div class="ai-input-container">
+      <input type="text" id="ai-message" placeholder="Ask AI something...">
+      <button id="ai-send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
